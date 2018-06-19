@@ -5,31 +5,45 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Company Name</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/style.css">
   </head>
   <body>
     <!-- Navbar -->
-    <nav class="topNavBar">
-      <div class="topnav" id="myTopnav">
-        <a href="#home" class="active">LOGO</a>
-        <a href="#news">News</a>
-        <a href="#contact">Contact</a>
-        <a href="#about">About</a>
-        <a href="javascript:void(0);" class="icon" onclick="myFunction()">
-          <i class="fa fa-bars"></i>
-        </a>
+    <div class="container">
+      <div>
+        <div class="navBox" id="triangle-topright"></div>
+        <div class=" navBox saleDiv">
+          <p> FREE SHIPPING ON ORDERS OF $50 OR MORE </p>
+        </div>
+        <div class="navBox" id="triangle-bottomleft"></div>
       </div>
-    </nav>
-    <!-- Search Bar -->
+
+      <div class="navBox" id="navBar">
+        <div class="navBox toggle">
+            <i class="fa fa-bars" aria-hidden="true"></i>
+        </div>
+        <ul>
+          <li><a href="#">ABOUT</a></li>
+          <li><a href="#">HOW TO BUY</a></li>
+          <li><a href="#">ORDER A CATALOG</a></li>
+          <li><a href="#">CONTACT</a></li>
+          <li><a href="#">VIEW ORDER (35)</a></li>
+        </ul>
+      </div>
+      <div class="navBox" id="triangle-topleft"></div>
+
+    </div>
+
+    <!-- Search Bar --
     <div class="searchBar">
       
     </div>
-    <!-- Bread Crumb -->
+    <!-- Bread Crumb --
     <div class="breadCrumb">
 
     </div>
-    <!-- Product Display 
+    <!-- Product Display --
     <div class="productView">
       <div class="box box1"></div>
       <div class="box box2"></div>
@@ -44,5 +58,7 @@
       <div class="box box11"></div>
       <div class="box box12"></div>
     </div>-->
+    <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+    <script src="assets/js/app.js"></script>
   </body>
 </html>

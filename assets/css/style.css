@@ -1,3 +1,8 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito+Sans:300,700|Oswald:400,700');
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
 /****** GENERAL ******/
 
 * {
@@ -5,98 +10,302 @@
     padding: 0;
     }
 
+
 /****** NAVBAR ******/
 
-.topNavBar {
-    background: darkred;
-    height: 47.5px;
-    width: 100%;
+.parallelogram {
+    height: 30px;
+    margin: 0 auto;
+    background: #b20127;
+	-webkit-transform: skew(45deg);
+       -moz-transform: skew(45deg);
+        -ms-transform: skew(45deg);
+         -o-transform: skew(45deg);
+            transform: skew(45deg);
+	
 }
 
-.topnav {
-    overflow: hidden;
-    background-color: darkred;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .active {
-    background-color: #4CAF50;
+#navigation {
+    height: 30px;
+    margin: 0 auto;
+    background: #82001c;
+    -webkit-transform: skew(-45deg);
+       -moz-transform: skew(-45deg);
+        -ms-transform: skew(-45deg);
+         -o-transform: skew(-45deg);
+            transform: skew(135deg) rotate(180deg);
+    -webkit-transform: rotate(180deg);
+       -moz-transform: rotate(180deg);
+        -ms-transform: rotate(180deg);
+         -o-transform: rotate(180deg);  
+}
+
+.container {
+    top: 0; 
+    left: auto;
+    width: 1315px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.navBox {
+    display: inline-block;
+}
+
+.box111 {
+    left: 15px;
+    width: 480px;
+    z-index: 1;
+    position: absolute;
+    background: #b20127;
+}
+
+.box22 {
+    left: 130px;
+    width: 90%;
+    margin: 0 0 0 0;
+    z-index: 0;
+    position: relative;
+}
+
+.contentContainer {
+    top: 0;
+    left: 167.5px;
+    width: 980px;
+    height: 30px;
+    margin: 0 auto;
+    z-index: 3;
+    position: absolute;
+    text-align: justify;
+}
+
+.contentContainer:after {
+    width: 100%;
+    content: '';
+    display: inline-block;
+}
+
+.navigationBox {
+    display: inline-block;
+    padding: 4px 0 0 0;
+}
+
+#freeShipping {
     color: white;
-  }
-  
-  .topnav .icon {
+}
+
+.navigationBox p{
+    color: #e8758d;
+    display: inline-block;
+    font-size: 13px; 
+}
+
+.logo {
     display: none;
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
+}
+
+#navBar ul li{
+    display: inline-block;
+    list-style: none;
+}
+
+#navBar ul li a{
+    color: #e8758d;
+    font-size: 13px;
+    text-decoration: none;
+}
+
+.toggle {
+    color: white;
+    width: 100%;
+    display: none;
+    font-size: 20px;
+    background: #82001c;
+    box-sizing: border-box;
+    text-align: left;
+}
+
+@media (max-width: 768px) {
+
+    .container {
+        width: 100%;
+        height: 0;
     }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
+
+    .parallelogram {
+        display: none;
+        
     }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
+    
+    #navigation {
+        display: none; 
     }
-  }
+
+    .navigationBox {
+        padding: 0;
+        display: inline;
+    }
+
+    .navigationBox p {
+        display: none;
+    }
+
+    .contentContainer {
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+    .toggle {
+        height: 50px;
+        padding: 10px 0 0 10px;
+        display: block;
+    }
+
+    .logo {
+        top: 0;
+        left: 0;
+        color: #82001c;
+        width: 90px;
+        margin: 0 50% 0 50%;
+        padding: 7.5px 0 7.5px 0;
+        position: absolute;
+        background: white;
+        text-align: center;
+        border-radius: 5px;
+    }
+
+    #navBar ul {
+        width: 100%;
+        display: none;
+    }
+
+    #navBar ul li{
+        display: block;
+        text-align: center;
+        background: #b20127;
+    }
+
+    .active {
+        display: block;
+    }
+
+}
 
 /****** SEARCH BAR ******/
 
-.searchBar {
-    background: red;
-    height: 52.5px;
+.searchContainer {
+    display: table;
+    max-width: 980px;
     width: 100%;
+    margin: 0 auto;
+}
+
+.searchLogo {
+    color: white;
+    background: #82001c;
+    border-radius: 5%;
+    display: table-cell;;
+    padding: 10px 35px;
+    width: 50px;
+}
+
+.searchBar {
+    display: table;
+    width: 100%; 
+}
+
+.searchBarBox {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.dropbtn {
+    
+}
+
+.contactNum {
+    display: table-cell;
+    width: 125px;
 }
 
 /****** BREAD CRUMB ******/
 
-.breadCrumb {
-    background: yellow;
+.breadContainer {
+    background: #ffdd00;
     height: 41px;
     width: 100%;
 }
 
+.breadCrumb {
+    height: 41px;
+    margin: 0 auto;
+    max-width: 980px;
+    width: 100%;
+}
+
+ul.breadCrumb {
+    list-style: none;
+}
+
+ul.breadCrumb li {
+    display: inline;
+    font-size: 18px;
+}
+
+ul.breadCrumb li+li:before {
+    padding: 8px;
+    color: black;
+    content: "/\00a0";
+}
+
+ul.breadCrumb li a {
+    text-decoration: none;
+    vertical-align: middle;
+}
+
+ul.breadCrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+}
+
+/****** SIDEBAR ******/
+
+.productContainer {
+    max-width: 980px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.sidebar {
+    float: left;
+    max-width: 180px;
+}
+
 /****** PRODUCT DISPLAY ******/
+
+.headerTitle {
+    margin: 0 auto;
+    max-width: 980px;
+}
 
 .productView {
     display: table;
-    height: 1140px;
+    height: 570px;
     margin: 0 auto 0 auto;
-    width: 320px;
+    width: 800px;
 }
 
 .box {
     display: inline-block;
     height: 190px;
-    width: 160px;
+    width: 200px;
+    border: 1px black;
+
 }
 
 .box1 {
-    background: red;
+    background: #b20127;
 }
 
 .box2 {
