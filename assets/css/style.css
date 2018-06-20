@@ -107,6 +107,7 @@ font-family: 'Nunito Sans', sans-serif;
 #navBar ul li{
     display: inline-block;
     list-style: none;
+    margin: 0 15px;
 }
 
 #navBar ul li a{
@@ -193,31 +194,70 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 /****** SEARCH BAR ******/
+/*
+font-family: 'Oswald', sans-serif;
+font-family: 'Nunito Sans', sans-serif;
+*/
+.oswald{
+    font-family: 'Oswald', sans-serif;
+}
+
+.nunito{
+    font-family: 'Nunito Sans', sans-serif;
+}
 
 .searchContainer {
     display: table;
+    height: 77px;
+    line-height: 1em;
     max-width: 980px;
     width: 100%;
     margin: 0 auto;
 }
 
 .searchLogo {
+    display: table-cell;
+    font-size: 1.8em;
+    text-align: center;
+    vertical-align: middle;
+    width:159px;
+}
+
+.searchLogo div{
     color: white;
     background: #82001c;
     border-radius: 5%;
-    display: table-cell;;
-    padding: 10px 35px;
-    width: 50px;
+    height: 50px;
+    margin: 0 auto;
+    width: 159px; 
+    text-align: center;
 }
 
 .searchBar {
     display: table;
-    width: 100%; 
+    width: 100%;
+    color: #82001c;
+    margin: 0 110px;
+    text-align: center;
+    vertical-align: middle;
 }
 
 .searchBarBox {
     display: table-cell;
     vertical-align: middle;
+    text-align: left;
+}
+
+.searchBarBox p.nunito {
+    font-size: .8em;
+}
+
+.searchBarBox p.oswald {
+    font-size: 1.2em;
+}
+
+.searchBarBox i {
+    font-size: 1.3em;
 }
 
 .dropbtn {
@@ -225,8 +265,35 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .contactNum {
+    color: #82001c;
     display: table-cell;
     width: 125px;
+    vertical-align: middle;
+}
+
+.contactNum p.nunito{
+    float: right;
+    font-size: .8em;
+}
+
+.contactNum p.oswald{
+    font-size: 1.2em;
+}
+
+@media (max-width: 768px) {
+    
+    .searchLogo {
+        display: none;
+    }
+    
+    .contactNum {
+        display: none;
+    }
+
+    .searchContainer {
+        padding: 60px 0 0 0;
+        margin: 0 auto;
+    }
 }
 
 /****** BREAD CRUMB ******/
@@ -246,11 +313,12 @@ font-family: 'Nunito Sans', sans-serif;
 
 ul.breadCrumb {
     list-style: none;
+    vertical-align: middle;
 }
 
 ul.breadCrumb li {
     display: inline;
-    font-size: 18px;
+    font-size: .85em;  
 }
 
 ul.breadCrumb li+li:before {
@@ -274,7 +342,7 @@ ul.breadCrumb li a:hover {
 .productContainer {
     max-width: 980px;
     width: 100%;
-    margin: 0 auto;
+    margin: 15px auto 0 auto;
 }
 
 .sidebar {
@@ -282,11 +350,41 @@ ul.breadCrumb li a:hover {
     max-width: 180px;
 }
 
+.sidebar ul {
+    list-style: none;
+    margin: 30px 30px 0 0;
+}
+
+.sidebar ul li{
+    border-bottom: 1px solid lightgray;
+    margin: 8px 0 8px 0;
+    text-decoration: none;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+}
+
+@media (max-width: 1000px) {
+    
+    .headerTitle {
+        text-align: center;
+    }
+    .sidebar {
+        display: none;
+    }
+}
 /****** PRODUCT DISPLAY ******/
 
 .headerTitle {
-    margin: 0 auto;
+    height: 100px;
+    margin: 50px auto 0 auto;
     max-width: 980px;
+    
+}
+
+.headerTitle h1{
+    font-size: 4em;
 }
 
 .productView {
@@ -299,55 +397,92 @@ ul.breadCrumb li a:hover {
 .box {
     display: inline-block;
     height: 190px;
-    width: 200px;
-    border: 1px black;
+    width: 198px;
+    border: 1px solid lightgray;
+    position: relative;
+}
 
+.box p{
+    position: absolute;
+    word-wrap: normal;
+    bottom: 10px;
+    left: 10px;
+    font-size: .9em;
+    font-weight: 700;
+    width: 150px;
 }
 
 .box1 {
-    background: #b20127;
+    background: url("../img/1.jpg") no-repeat center;
 }
 
 .box2 {
-    background: green;
+    background: url("../img/lupe-fiasco-product-red-converse-all-star-01.jpg") no-repeat center;
 }
 
 .box3 {
-    background: blue;
+    background: url("../img/Layer\ 50.jpg") no-repeat center;
 }
 
 .box4 {
-    background: lightcoral;
+    background: url("../img/1358338402Intel_Reader_ProductShot.jpg") no-repeat center;
 }
 
 .box5 {
-    background: lightgoldenrodyellow;
+    background: url("../img/1467966472-logo-img-product-db.jpg") no-repeat center;
 }
 
 .box6 {
-    background: lightskyblue;
+    background: url("../img/products-camp-kitchen-thumb.jpg") no-repeat center;
 }
 
 .box7 {
-    background: lightseagreen;
+    background: url("../img/DSC_5994.jpg") no-repeat center;
 }
 
 .box8 {
-    background: lightgoldenrodyellow;
+    background: url("../img/phil-teds-sport-inline-auto-stop-stroller-in-midnight-3-4-view_product_large.jpg") no-repeat center;
 }
 
 .box9 {
-    background: lightgrey;
+    background: url("../img/oink-final.jpg") no-repeat center;
 }
 
 .box10 {
-    background: lightsteelblue;
+    background: url("../img/iPhone6_34FR_SpGry_iPhone6plus_34FL_SpGry_Homescreen_HERO.jpg") no-repeat center;
 }
 
 .box11 {
-    background: greenyellow;
+    background: url("../img/oculus-touch-product-394x263-c.jpg") no-repeat center;
 }
 
 .box12 {
-    background: blueviolet;
+    background: url("../img/design_of_useful_things.jpg") no-repeat center;
+    background-size: cover;
+}
+
+@media (max-width: 768px) {
+
+    .productView {
+        width: 600px;
+        height: 760px;
+    }
+}
+
+@media (max-width: 600px) {
+
+    .productView {
+        width: 320px;
+        overflow: hidden;
+    }
+
+    .box {
+        height: 190px;
+        width: 158px;
+        border: none;
+    }
+
+    .headerTitle {
+        display: none;
+    }
 }
