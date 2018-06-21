@@ -10,194 +10,6 @@ font-family: 'Nunito Sans', sans-serif;
     padding: 0;
     }
 
-
-/****** NAVBAR ******/
-
-.parallelogram {
-    height: 30px;
-    margin: 0 auto;
-    background: #b20127;
-	-webkit-transform: skew(45deg);
-       -moz-transform: skew(45deg);
-        -ms-transform: skew(45deg);
-         -o-transform: skew(45deg);
-            transform: skew(45deg);
-	
-}
-
-#navigation {
-    height: 30px;
-    margin: 0 auto;
-    background: #82001c;
-    -webkit-transform: skew(-45deg);
-       -moz-transform: skew(-45deg);
-        -ms-transform: skew(-45deg);
-         -o-transform: skew(-45deg);
-            transform: skew(135deg) rotate(180deg);
-    -webkit-transform: rotate(180deg);
-       -moz-transform: rotate(180deg);
-        -ms-transform: rotate(180deg);
-         -o-transform: rotate(180deg);  
-}
-
-.container {
-    top: 0; 
-    left: auto;
-    width: 1315px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.navBox {
-    display: inline-block;
-}
-
-.box111 {
-    left: 15px;
-    width: 480px;
-    z-index: 1;
-    position: absolute;
-    background: #b20127;
-}
-
-.box22 {
-    left: 130px;
-    width: 90%;
-    margin: 0 0 0 0;
-    z-index: 0;
-    position: relative;
-}
-
-.contentContainer {
-    top: 0;
-    left: 167.5px;
-    width: 980px;
-    height: 30px;
-    margin: 0 auto;
-    z-index: 3;
-    position: absolute;
-    text-align: justify;
-}
-
-.contentContainer:after {
-    width: 100%;
-    content: '';
-    display: inline-block;
-}
-
-.navigationBox {
-    display: inline-block;
-    padding: 4px 0 0 0;
-}
-
-#freeShipping {
-    color: white;
-}
-
-.navigationBox p{
-    color: #e8758d;
-    display: inline-block;
-    font-size: 13px; 
-}
-
-.logo {
-    display: none;
-}
-
-#navBar ul li{
-    display: inline-block;
-    list-style: none;
-    margin: 0 15px;
-}
-
-#navBar ul li a{
-    color: #e8758d;
-    font-size: 13px;
-    text-decoration: none;
-}
-
-.toggle {
-    color: white;
-    width: 100%;
-    display: none;
-    font-size: 20px;
-    background: #82001c;
-    box-sizing: border-box;
-    text-align: left;
-}
-
-@media (max-width: 768px) {
-
-    .container {
-        width: 100%;
-        height: 0;
-    }
-
-    .parallelogram {
-        display: none;
-        
-    }
-    
-    #navigation {
-        display: none; 
-    }
-
-    .navigationBox {
-        padding: 0;
-        display: inline;
-    }
-
-    .navigationBox p {
-        display: none;
-    }
-
-    .contentContainer {
-        top: 0;
-        left: 0;
-        width: 100%;
-    }
-
-    .toggle {
-        height: 50px;
-        padding: 10px 0 0 10px;
-        display: block;
-    }
-
-    .logo {
-        top: 0;
-        left: 0;
-        color: #82001c;
-        width: 90px;
-        margin: 0 50% 0 50%;
-        padding: 7.5px 0 7.5px 0;
-        position: absolute;
-        background: white;
-        text-align: center;
-        border-radius: 5px;
-    }
-
-    #navBar ul {
-        width: 100%;
-        display: none;
-    }
-
-    #navBar ul li{
-        display: block;
-        text-align: center;
-        background: #b20127;
-    }
-
-    .active {
-        display: block;
-    }
-
-}
-
-/****** SEARCH BAR ******/
-/*
-font-family: 'Oswald', sans-serif;
-font-family: 'Nunito Sans', sans-serif;
-*/
 .oswald{
     font-family: 'Oswald', sans-serif;
 }
@@ -205,6 +17,101 @@ font-family: 'Nunito Sans', sans-serif;
 .nunito{
     font-family: 'Nunito Sans', sans-serif;
 }
+
+/****** NAVBAR ******/
+
+#backContainer {
+    margin: 0 auto;
+    position: relative;
+    width: 1315px;
+}
+
+#background1 {
+    background: #b20127;
+    float: left;
+    height: 30px;
+    position: relative;
+    width: 480px;
+    z-index: 1;
+	-webkit-transform: skew(45deg);
+       -moz-transform: skew(45deg);
+        -ms-transform: skew(45deg);
+         -o-transform: skew(45deg);
+            transform: skew(45deg);	
+}
+
+#background2 {
+    background: #82001c;
+    height: 30px;
+    margin: 0 0 0 auto;
+    width: 80%;
+    -webkit-transform: skew(-45deg);
+       -moz-transform: skew(-45deg);
+        -ms-transform: skew(-45deg);
+         -o-transform: skew(-45deg);
+            transform: skew(-45deg);
+}
+
+.navContainer {
+    left: 0;
+    height: 30px;
+    margin: 0 auto;
+    max-width: 980px;
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 100%;
+    z-index: 2;
+}
+
+.saleBox p{
+    color: #e06c85;
+    display: block;
+    float: left;
+    font-size: 13px;
+    padding: 7px 7px 7px 0;
+}
+
+#shipping {
+    color: white;
+    font-weight: 700;
+}
+
+.topnav {
+    overflow: hidden;
+    float: right;
+  }
+  
+.topnav a {
+    color: #e06c85;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-weight: 700;
+    padding: 7px 0px 7px 16px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.topnav a:hover {
+    color: white;
+}
+
+.active {
+    background-color: #82001c;
+    color: white;
+}
+
+.topnav .icon {
+    display: none;
+    font-size: 25px;
+}
+
+#logo {
+    display: none;
+}
+
+/****** SEARCH BAR ******/
 
 .searchContainer {
     display: table;
@@ -217,35 +124,41 @@ font-family: 'Nunito Sans', sans-serif;
 
 .searchLogo {
     display: table-cell;
-    font-size: 1.8em;
+    /*border: 1px solid black;*/
     text-align: center;
-    vertical-align: middle;
-    width:159px;
+    vertical-align: bottom;
+    width: 160px;
 }
 
 .searchLogo div{
-    color: white;
     background: #82001c;
-    border-radius: 5%;
-    height: 50px;
-    margin: 0 auto;
-    width: 159px; 
-    text-align: center;
+    border-radius: 5px;
+    color: white;
+    font-size: 30px;
+    font-weight: 700;
+    height: 35px;
+    padding-top: 20px;
+    width: 150px;
+    margin: 0;
 }
 
 .searchBar {
-    display: table;
-    width: 100%;
+    /*border: 1px solid black;*/
     color: #82001c;
-    margin: 0 110px;
+    display: table;
+    height: 77px;
+    margin: 0 auto;
     text-align: center;
+    width: 450px;
     vertical-align: middle;
 }
 
 .searchBarBox {
     display: table-cell;
-    vertical-align: middle;
+    height: 77px;
     text-align: left;
+    width: 115px;
+    vertical-align: bottom;
 }
 
 .searchBarBox p.nunito {
@@ -254,21 +167,25 @@ font-family: 'Nunito Sans', sans-serif;
 
 .searchBarBox p.oswald {
     font-size: 1.2em;
+    font-weight: 700;
+}
+
+#magnify {
+    display: none;
 }
 
 .searchBarBox i {
     font-size: 1.3em;
-}
-
-.dropbtn {
-    
+    font-weight: 700;
+    padding: 0 0 0 7px;
 }
 
 .contactNum {
     color: #82001c;
+    /*border: 1px solid black;*/
     display: table-cell;
-    width: 125px;
-    vertical-align: middle;
+    width: 160px;
+    vertical-align: bottom;
 }
 
 .contactNum p.nunito{
@@ -277,38 +194,28 @@ font-family: 'Nunito Sans', sans-serif;
 }
 
 .contactNum p.oswald{
+    float: right;
     font-size: 1.2em;
-}
-
-@media (max-width: 768px) {
-    
-    .searchLogo {
-        display: none;
-    }
-    
-    .contactNum {
-        display: none;
-    }
-
-    .searchContainer {
-        padding: 60px 0 0 0;
-        margin: 0 auto;
-    }
+    font-weight: 700;
 }
 
 /****** BREAD CRUMB ******/
 
 .breadContainer {
     background: #ffdd00;
+    font-weight: 300;
     height: 41px;
+    margin: 20px 0 0 0;
     width: 100%;
+    
 }
 
 .breadCrumb {
     height: 41px;
-    margin: 0 auto;
+    margin: 0 auto 0 auto;
     max-width: 980px;
     width: 100%;
+    
 }
 
 ul.breadCrumb {
@@ -335,6 +242,20 @@ ul.breadCrumb li a {
 ul.breadCrumb li a:hover {
     color: #01447e;
     text-decoration: underline;
+}
+
+@media screen and (max-width: 768px) {
+
+    .breadContainer {
+        margin-top: 0;
+    }
+}
+
+@media screen and (max-width: 426px) {
+
+    ul.breadCrumb li {
+        font-size: .65em;  
+    }
 }
 
 /****** SIDEBAR ******/
@@ -365,15 +286,6 @@ ul.breadCrumb li a:hover {
     text-decoration: none;
 }
 
-@media (max-width: 1000px) {
-    
-    .headerTitle {
-        text-align: center;
-    }
-    .sidebar {
-        display: none;
-    }
-}
 /****** PRODUCT DISPLAY ******/
 
 .headerTitle {
@@ -461,16 +373,141 @@ ul.breadCrumb li a:hover {
     background-size: cover;
 }
 
-@media (max-width: 768px) {
+@media screen and (max-width: 1314px){
+    
+    /*** TOP NAVBAR ***/
+    #backContainer {
+        display: none;
+    }
+    
+    .navContainer {
+        background: #82001c;
+        width: 100%;
+        padding: 0 16px;
+    }
 
+    /*** SEARCH BAR ***/
+    .searchContainer {
+        margin: 20px auto 0 auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    
+    /*** SIDEBAR ***/
+    .headerTitle {
+        text-align: center;
+    }
+    .sidebar {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 805px) {
+    
+    /*** TOP NAVBAR ***/
+    .saleBox {
+        display: none;
+    }
+
+    .topnav {
+        padding-right: 16px;
+    }
+
+    /*** SEARCH BAR ***/
+    .searchLogo {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    
+    /*** TOP NAVBAR ***/
+    .navContainer{
+        margin: 0;
+        padding: 0;
+    }
+
+    .topnav {
+        background: #82001c;
+        left: 0;
+        position: absolute;
+        max-width: 768px;
+        padding: 0;
+        right: 0;
+        width: 100%;
+        height: 47.5px;
+    }
+
+    .topnav a {
+        display: none;
+    }
+
+    .topnav a.icon {
+        float: left;
+        display: block;
+        padding-left: 16px;
+    }
+    
+    .topnav.responsive {position: relative;}
+    .topnav.responsive .icon {
+        position: absolute;
+        left: 16px;
+        top: 0;
+    }
+    .topnav.responsive a {
+        float: none;
+        display: block;
+        text-align: center;
+    }
+
+    /*** SEARCH BAR ***/
+    .contactNum {
+        display: none;
+    }
+
+    #arrow {
+        display: none;
+        font-weight: normal;
+    }
+
+    #magnify {
+        display: initial;
+    }
+
+    .searchContainer {
+        background: #b20127;
+        padding: 20px 0 30px 0;
+        width: 100%;
+    }
+
+    .searchBar {
+        color: white;
+        display: table;
+        margin: 0 auto;
+        text-align: center;
+        width: 100%;
+        vertical-align: middle;
+    }
+    
+    .searchBarBox {
+        display: table-cell;
+        text-align: center;
+        width: 106px;
+        vertical-align: bottom;
+    } 
+
+    /*** PRODUCT DISPLAY ***/
     .productView {
         width: 600px;
         height: 760px;
     }
+
 }
 
 @media (max-width: 600px) {
 
+    /*** PRODUCT DISPLAY ***/
     .productView {
         width: 320px;
         overflow: hidden;
@@ -484,5 +521,29 @@ ul.breadCrumb li a:hover {
 
     .headerTitle {
         display: none;
+    }
+}
+
+@media screen and (max-width: 426px) {
+    
+    /*** SEARCH BAR ***/
+    .searchContainer {
+        max-width: 425px;
+        padding: 0px 0 15px 0;
+        width: 100%;
+    }
+
+    .searchBarBox {
+        padding-left: 4%;
+        text-align: left;
+    }
+    
+    .searchBarBox p.oswald {
+        font-size: 1em;
+    }
+    
+    .searchBarBox i {
+        font-size: 1em;
+        padding: 0 0 0 5px;
     }
 }
